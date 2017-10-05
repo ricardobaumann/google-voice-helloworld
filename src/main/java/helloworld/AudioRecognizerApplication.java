@@ -8,7 +8,6 @@ import com.google.protobuf.ByteString;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.context.annotation.Bean;
 
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -24,7 +23,7 @@ public class AudioRecognizerApplication {
         this.contentBotRepo = contentBotRepo;
     }
 
-    @Bean
+    //@Bean
     CommandLineRunner commandLineRunner() {
         return args -> {
             // Instantiates a client

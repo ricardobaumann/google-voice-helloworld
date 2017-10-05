@@ -1,0 +1,46 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<link rel="stylesheet" type="text/css"
+      href="webjars/bootstrap/3.3.7-1/css/bootstrap.min.css"/>
+<body>
+
+<nav class="navbar navbar-inverse">
+    <div class="container">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">Google speech helloworld</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Home</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container">
+
+    <div class="starter-template">
+        <h4 th:if="${message}">
+            <span th:text="${message}"></span>
+        </h4>
+        <form method="POST" enctype="multipart/form-data" action="/">
+            <table class="table">
+                <thead class="thead-inverse">
+                <tr>
+                    <td align="right">Audio File to upload:</td>
+                    <td><input type="file" name="file"/></td>
+                </tr>
+                </thead>
+                <tr>
+                    <td></td>
+                    <td><input type="submit" value="Upload"/></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+
+</div>
+<script type="text/javascript"
+        src="webjars/bootstrap/3.3.7-1/js/bootstrap.min.js"></script>
+
+</body>
+</html>
